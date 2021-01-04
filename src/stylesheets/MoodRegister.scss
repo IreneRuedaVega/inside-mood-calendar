@@ -1,0 +1,38 @@
+.calendar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__image {
+    width: 48px;
+    margin: 20px 0 10px 0;
+    margin-right: 190px;
+  }
+
+  &__text {
+    background-color: white;
+    border-radius: 10px;
+    width: 250px;
+    word-wrap: break-word;
+    margin: 2px auto;
+    padding: 10px;
+    text-align: left;
+    position: relative;
+    line-break: auto;
+
+    &--date {
+      font-size: 16px;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      color: #aac3bd;
+      font-weight: 500;
+      margin-bottom: 10px;
+    }
+
+    &--message {
+      color: #767676;
+      font-size: 16px;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+  }
+}

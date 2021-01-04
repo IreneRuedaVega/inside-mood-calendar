@@ -1,7 +1,16 @@
 import React from "react";
 import "../stylesheets/Editor.scss";
+import { Link } from "react-router-dom";
+import MoodInput from "./MoodInput";
 
-const Editor = (props) => {
+const Editor = ({
+  date,
+  mood,
+  message,
+  moodInputsHandler,
+  btnSaveHandler,
+  btnCancelHandler,
+}) => {
   return (
     <div className="editor">
       <h1 className="editor__title">How was your day?</h1>
@@ -14,37 +23,48 @@ const Editor = (props) => {
           type="date"
           id="date"
           name="date"
+          value={date}
+          onChange={moodInputsHandler}
         />
         <label className="editor__form--textMood" htmlFor="state">
           Please select your mood
         </label>
         <div className="editor__form--mood">
-          <label htmlFor="state" className="happy">
-            <input type="radio" id="state" value=":)" className="happy__face" />
-            <span className="happy__emoji">&#128578;</span>
-          </label>
-          <label htmlFor="state" className="sad">
-            <input
-              htmlFor="state"
-              type="radio"
-              id="state"
-              value=":("
-              className="sad__face"
-            />
-            <span className="sad__emoji">&#128577;</span>
-          </label>
+          <MoodInput
+            inputId="moodHappy"
+            textLabel=":)"
+            mood={mood}
+            moodInputsHandler={moodInputsHandler}
+          />
+          <MoodInput
+            inputId="moodHappy"
+            textLabel=":("
+            mood={mood}
+            moodInputsHandler={moodInputsHandler}
+          />
         </div>
         <textarea
           className="editor__form--message"
+          name="message"
           id="message"
-          name="w3review"
           rows="6"
           cols="35"
+          maxLength="280"
           placeholder="Why do you feel like this?"
+          value={message}
+          onChange={moodInputsHandler}
         ></textarea>
         <div className="editor__form--buttons">
-          <button className="btnSave">Save</button>
-          <button className="btnCancel">Cancel</button>
+          <Link to="/">
+            <button className="btnSave" onClick={btnSaveHandler}>
+              Save
+            </button>
+          </Link>
+          <Link to="/">
+            <button className="btnCancel" onClick={btnCancelHandler}>
+              Cancel
+            </button>
+          </Link>
         </div>
       </form>
     </div>
