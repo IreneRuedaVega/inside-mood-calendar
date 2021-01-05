@@ -1,13 +1,34 @@
 .calendar {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  list-style: none;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  /*  border: 1px solid black; */
+
+  @media all and (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-self: start;
+    /* border: 1px solid blue; */
+    margin: 25px 15px 0 15px;
+  }
+
+  @media all and (min-width: 1200px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-self: start;
+    /* border: 1px solid blue; */
+    margin: 25px 30px 0 30px;
+  }
 
   &__image {
     width: 48px;
-    margin: 20px 0 10px 0;
-    margin-right: 190px;
+    margin: 20px 190px 10px 0;
+
+    @media all and (min-width: 768px) {
+      margin: 10px;
+      /*  border: 1px solid black; */
+    }
   }
 
   &__text {
@@ -23,7 +44,6 @@
 
     &--date {
       font-size: 16px;
-      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
       color: #aac3bd;
       font-weight: 500;
       margin-bottom: 10px;
@@ -32,7 +52,6 @@
     &--message {
       color: #767676;
       font-size: 16px;
-      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     }
   }
 }

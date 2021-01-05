@@ -21,7 +21,7 @@ const Home = ({ moodDataArr, btnNewRecordHandler }) => {
         </Link>
       </div>
       <div>
-        <ul>
+        <ul className="calendarList">
           {moodDataArr.map((moodItem, index) => {
             return (
               <li key={index} className="calendar">
