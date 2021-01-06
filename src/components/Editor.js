@@ -55,12 +55,12 @@ const Editor = ({
           onChange={moodInputsHandler}
         ></textarea>
         <div className="editor__form--buttons">
-          <Link to="/">
+          <Link to="/calendar">
             <button className="btnSave" onClick={btnSaveHandler}>
               Save
             </button>
           </Link>
-          <Link to="/">
+          <Link to="/calendar">
             <button className="btnCancel" onClick={btnCancelHandler}>
               Cancel
             </button>

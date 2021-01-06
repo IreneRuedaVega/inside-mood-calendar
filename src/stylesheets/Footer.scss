@@ -1,0 +1,50 @@
+.footer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #aac3bd;
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding-right: 15px;
+
+  @media all and (min-width: 1200px) {
+    justify-content: space-between;
+    margin-right: 20px;
+  }
+
+  &__logo {
+    width: 45%;
+    margin-left: 15px;
+    padding: 8px;
+
+    @media all and (min-width: 768px) {
+      width: 24%;
+    }
+    @media all and (min-width: 1200px) {
+      width: 28%;
+    }
+  }
+}
+
+.social {
+  list-style: none;
+  display: flex;
+
+  &__item {
+    &--github,
+    &--linkedin,
+    &--twitter {
+      margin: 0 5px;
+      color: white;
+      cursor: pointer;
+      @media all and (min-width: 768px) {
+        margin: 0 15px;
+      }
+      @media all and (min-width: 1200px) {
+        margin: 0 15px;
+      }
+    }
+  }
+}

@@ -4,6 +4,8 @@ import Home from "./Home";
 import { Route, Switch } from "react-router-dom";
 import Editor from "./Editor";
 import moment from "moment";
+import Landing from "./Landing";
+import Footer from "./Footer";
 
 class App extends React.Component {
   constructor(props) {
@@ -75,10 +77,11 @@ class App extends React.Component {
     const { date, mood, message } = this.state.moodData;
     const { moodDataArr } = this.state;
     return (
-      <div className="App">
-        <main>
+      <>
+        <main className="App">
           <Switch>
-            <Route exact path="/">
+            <Route exact path="/" component={Landing} />
+            <Route path="/calendar">
               <Home
                 moodDataArr={moodDataArr}
                 btnNewRecordHandler={this.state.resetMoodData}
@@ -96,7 +99,8 @@ class App extends React.Component {
             </Route>
           </Switch>
         </main>
-      </div>
+        <Footer />
+      </>
     );
   }
 }

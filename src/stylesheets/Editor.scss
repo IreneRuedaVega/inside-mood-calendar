@@ -1,7 +1,7 @@
 .editor {
   background-color: white;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -40,7 +40,6 @@
 
     &--date {
       color: #aac3bd;
-      margin-top: 0px;
       font-size: 15px;
       font-weight: 500;
 
@@ -102,13 +101,14 @@
         margin-right: 30px;
         padding: 6px 20px;
         font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-        color: white;
-        background-color: #ffcf51;
+        color: #ffcf51;
+        background-color: white;
         font-size: 16px;
-        border: 1px solid #ffcf51;
+        border: 2px solid #ffcf51;
         border-radius: 8px;
         margin-top: 20px;
         font-weight: 600;
+        cursor: pointer;
 
         @media all and (min-width: 768px) {
           font-size: 20px;
@@ -118,6 +118,11 @@
         }
       }
 
+      .btnSave:hover {
+        background-color: #ffcf51;
+        color: white;
+      }
+
       .btnCancel {
         background-color: white;
         border: 1px solid white;
@@ -125,15 +130,23 @@
         font-size: 15px;
         font-weight: 600;
         padding: 6px 10px;
+        cursor: pointer;
 
         @media all and (min-width: 768px) {
           font-size: 20px;
           font-weight: 500;
+          padding: 0;
         }
         @media all and (min-width: 1200px) {
           font-size: 24px;
           font-weight: 500;
+          padding: 0;
         }
+      }
+
+      .btnCancel:hover {
+        border-bottom: 2px solid #aac3bd;
+        padding: 0;
       }
     }
 

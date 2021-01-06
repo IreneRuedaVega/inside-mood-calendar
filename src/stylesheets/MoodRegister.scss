@@ -1,14 +1,12 @@
 .calendar {
   list-style: none;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  /*  border: 1px solid black; */
 
   @media all and (min-width: 768px) {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-self: start;
-    /* border: 1px solid blue; */
     margin: 25px 15px 0 15px;
   }
 
@@ -17,7 +15,6 @@
     flex-direction: row;
     justify-content: flex-start;
     align-self: start;
-    /* border: 1px solid blue; */
     margin: 25px 30px 0 30px;
   }
 
@@ -27,7 +24,6 @@
 
     @media all and (min-width: 768px) {
       margin: 10px;
-      /*  border: 1px solid black; */
     }
   }
 

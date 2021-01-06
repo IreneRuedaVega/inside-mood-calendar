@@ -41,11 +41,12 @@
     width: 50px;
     height: 50px;
     font-size: 20px;
-    background-color: #ffcf51;
-    border: 2px solid #ffcf51;
+    background-color: transparent;
+    border: 2px solid white;
     color: white;
     border-radius: 30px;
     margin-bottom: 20px;
+    cursor: pointer;
 
     @media all and (min-width: 768px) {
       font-size: 25px;
@@ -58,6 +59,12 @@
       margin-top: 15px;
     }
   }
+
+  &__btn:hover {
+    background-color: #ffcf51;
+    border: 2px solid #ffcf51;
+    color: white;
+  }
 }
 
 .calendarList {
@@ -69,9 +76,12 @@
   @media all and (min-width: 768px) {
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    /*  border: 1px solid pink; */
-    /* margin: 5px; */
+    margin: 0 20px;
+  }
+
+  @media all and (min-width: 1200px) {
+    margin: 0;
   }
 }
