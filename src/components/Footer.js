@@ -29,7 +29,7 @@ const Footer = () => {
             </li>
             <li className="social__item">
               <a
-                href="www.linkedin.com/in/ireneruedavega"
+                href="//linkedin.com/in/ireneruedavega"
                 target="_blank"
                 title="Linkedin"
                 className="social__item--linkedin"
@@ -40,7 +40,7 @@ const Footer = () => {
             </li>
             <li className="social__item">
               <a
-                href="www.twitter.com/Irenelandia_"
+                href="//twitter.com/Irenelandia_"
                 target="_blank"
                 title="Twitter"
                 className="social__item--twitter"
