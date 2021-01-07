@@ -62,6 +62,7 @@
       width: 272px;
       font-size: 16px;
       font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      outline: none;
 
       @media all and (min-width: 768px) {
         margin-top: 15px;
@@ -109,6 +110,7 @@
         margin-top: 20px;
         font-weight: 600;
         cursor: pointer;
+        outline: none;
 
         @media all and (min-width: 768px) {
           font-size: 20px;
@@ -131,6 +133,7 @@
         font-weight: 600;
         padding: 6px 10px;
         cursor: pointer;
+        outline: none;
 
         @media all and (min-width: 768px) {
           font-size: 20px;
@@ -156,6 +159,7 @@
       padding: 8px;
       color: #aac3bd;
       border: 2px solid #cbdad9;
+      outline: none;
 
       @media all and (min-width: 768px) {
         width: 450px;
