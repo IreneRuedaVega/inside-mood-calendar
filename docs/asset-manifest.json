@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "./static/css/main.215a5d0a.chunk.css",
-    "main.js": "./static/js/main.96e2a35b.chunk.js",
-    "main.js.map": "./static/js/main.96e2a35b.chunk.js.map",
+    "main.js": "./static/js/main.37349080.chunk.js",
+    "main.js.map": "./static/js/main.37349080.chunk.js.map",
     "runtime-main.js": "./static/js/runtime-main.598da9df.js",
     "runtime-main.js.map": "./static/js/runtime-main.598da9df.js.map",
     "static/js/2.ef33c34c.chunk.js": "./static/js/2.ef33c34c.chunk.js",
@@ -13,7 +13,7 @@
     "static/css/main.215a5d0a.chunk.css.map": "./static/css/main.215a5d0a.chunk.css.map",
     "static/js/2.ef33c34c.chunk.js.LICENSE.txt": "./static/js/2.ef33c34c.chunk.js.LICENSE.txt",
     "static/media/happy.a46008c2.svg": "./static/media/happy.a46008c2.svg",
-    "static/media/logoBlanco.0f72e699.svg": "./static/media/logoBlanco.0f72e699.svg",
+    "static/media/logoBlanco.f43ec85d.svg": "./static/media/logoBlanco.f43ec85d.svg",
     "static/media/logoInsideMood.28ef18f2.svg": "./static/media/logoInsideMood.28ef18f2.svg",
     "static/media/sad.0364e9fc.svg": "./static/media/sad.0364e9fc.svg"
   },
@@ -21,6 +21,6 @@
     "static/js/runtime-main.598da9df.js",
     "static/js/2.ef33c34c.chunk.js",
     "static/css/main.215a5d0a.chunk.css",
-    "static/js/main.96e2a35b.chunk.js"
+    "static/js/main.37349080.chunk.js"
   ]
 }
